@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fb;
+  color: #243047;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+}
+
+/* Header */
+header {
+  background: #ffffff;
+  color: #243047;
+  padding: 28px 32px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  border: 1px solid #e5eaf2;
+  box-shadow: 0 4px 18px rgba(30, 50, 80, 0.05);
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #2457c5;
+}
+
+header p {
+  color: #69758a;
+  margin-bottom: 20px;
+}
+
+header a {
+  color: #2457c5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Page headings */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #243047;
+}
+
+h3 {
+  color: #2457c5;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* Internship cards */
+.card {
+  background: #ffffff;
+  padding: 26px;
+  margin: 18px 0;
+  border: 1px solid #e5eaf2;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(30, 50, 80, 0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(30, 50, 80, 0.08);
+}
+
+.card p {
+  color: #596579;
+  line-height: 1.7;
+}
+
+/* Links */
+a {
+  color: #2457c5;
+}
+
+.link-button {
+  display: inline-block;
+  padding: 11px 20px;
+  background: #2457c5;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.link-button:hover {
+  background: #19449f;
+}
+
+/* Application form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: 600;
+  color: #35435b;
+  margin-top: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d6deea;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #243047;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #2457c5;
+  box-shadow: 0 0 0 3px rgba(36, 87, 197, 0.12);
+}
+
+input::placeholder {
+  color: #9aa5b5;
+}
+
+input[readonly] {
+  background: #f3f6fb;
+  color: #596579;
+}
+
+/* Submit button */
+button {
+  padding: 13px 18px;
+  margin-top: 12px;
+  background: #2457c5;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #19449f;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Success and error messages */
+.success {
+  color: #16834a;
+  background: #eaf8ef;
+  border: 1px solid #c8edd5;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.error {
+  color: #c33434;
+  background: #fff0f0;
+  border: 1px solid #f4d0d0;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    margin: 12px auto;
+    padding: 14px;
+  }
+
+  header {
+    padding: 22px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+html,
+body,
+#root {
+  min-height: 100%;
+  background-color: #f5f7fb !important;
+  color: #243047 !important;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #f5f7fb !important;
+}
+
+h2 {
+  color: #243047 !important;
+}
